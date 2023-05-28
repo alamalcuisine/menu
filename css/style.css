@@ -1,0 +1,242 @@
+:root {
+  --text_color: black;
+  --bg: url("../img/White\ Rock\ Modern\ Aesthetic\ Flat\ Texture\ Background\ Restaurant\ Menu.jpg");
+  --footer-Color: rgb(100, 102, 99);
+  --a-Tag-Color: black;
+  --title-color: rgb(197, 151, 91);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+}
+* {
+  user-select: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+*:hover {
+  cursor: default;
+}
+
+button,
+a,
+#content {
+  pointer-events: all;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 350px;
+  background: var(--bg);
+  color: var(--text_color);
+}
+
+#content {
+  position: relative;
+  background: var(--bg);
+  width: 350px;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.page {
+  background: var(--bg);
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.main-page img {
+  width: 200px;
+}
+
+.main-page p {
+  padding: 0 2rem;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.page {
+  transform-origin: 0 0;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+  border: 3px solid var(--title-color);
+  filter: brightness(1);
+}
+
+.cs-container {
+  height: calc(100vh - 150px - 70px);
+  overflow-y: scroll;
+}
+
+.main-page .cs-container {
+  height: calc(100vh - 190px - 55px);
+}
+svg {
+  fill: var(--a-Tag-Color);
+  height: 1.3rem;
+  width: 1.3rem;
+  margin: 3px 10px 0 10px;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 4px;
+}
+
+#progress {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+a,
+a:active,
+a:hover {
+  color: var(--a-Tag-Color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+}
+
+header button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 0;
+  background: inherit;
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+header button:hover,
+header button:active {
+  background-color: var(--title-color);
+  color: white;
+}
+
+header button:first-of-type {
+  left: 5px;
+}
+
+header button:last-of-type {
+  right: 5px;
+}
+
+header p {
+  font-size: 2rem;
+  text-align: start;
+  margin: 0;
+  font-weight: normal;
+  width: 200px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 150px;
+}
+
+section {
+  text-align: center;
+  margin: 0.5rem auto;
+  padding: 0.5rem 10px;
+  max-width: 300px;
+  border-radius: 0.5rem;
+}
+
+.title {
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  padding: 0;
+  border: 2px solid var(--title-color);
+}
+
+.title-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+
+.item-name {
+  text-align: start;
+  padding-right: 5px;
+}
+
+.item-price {
+  text-align: end;
+}
+
+.contact-us {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.contact-us span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wp svg {
+  fill: var(--a-Tag-Color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 3px 10px 0 10px;
+}
+
+.rotate {
+  transform-origin: 0 0;
+  transform: rotateX(-5deg) rotateY(100deg) rotateZ(0deg);
+  filter: brightness(0.5);
+  transform-style: preserve-3d;
+}
