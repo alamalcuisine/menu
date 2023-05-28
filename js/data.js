@@ -63,14 +63,14 @@ const data = [
     page: 1,
   },
   {
-    name: "Lahem 3ajin",
+    name: "Lahem Bi 3ajin",
     category: "Starters",
     unit: "Dozen",
     price: 7,
     page: 1,
   },
   {
-    name: "Lahem 3ajin Soiree",
+    name: "Lahem Bi 3ajin Soiree",
     category: "Starters",
     unit: "Dozen",
     price: 8,

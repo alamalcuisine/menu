@@ -63,11 +63,11 @@ categories.forEach((pageNb) => {
       </div>
       <span>
         <a
-          href="https://www.facebook.com/profile.php?id=100090272394104"
+          href="https://instagram.com/alamalcuisine"
           target="_blank">${instagramLogo}</a>
           <div>Al Amal Cuisine</div>
         <a
-          href="https://instagram.com/alamalcuisine"
+          href="https://www.facebook.com/profile.php?id=100090272394104"
           target="_blank">${fbLogo}</a>
       </span>
     </div>
